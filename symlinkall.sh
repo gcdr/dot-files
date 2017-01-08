@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#DEST="$HOME"
-DEST="/tmp/target"
+DEST="$HOME"
+#DEST="/tmp/target"
 
 DATETIME=`date +%Y%m%d.%T`
 
