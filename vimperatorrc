@@ -1,0 +1,80 @@
+" generic utilities
+:command -nargs=* goo    open google <args>
+:command -nargs=* maps   open maps.google.com <args>
+:command -nargs=* enwiki open https://en.wikipedia.org/wiki/<args>
+:command -nargs=* itwiki open https://it.wikipedia.org/wiki/<args>
+:command -nargs=* meteo  open http://www.arpa.veneto.it/previsioni/it/html/index.php <args>
+
+" personal shortcuts
+:command -nargs=* home   open http://www.albertopettarin.it/ <args>
+:command -nargs=* blog   open http://www.albertopettarin.it/blog/ <args>
+:command -nargs=* twit   open https://twitter.com/acutebit <args>
+:command -nargs=* git    open https://github.com/pettarin/ <args>
+:command -nargs=* tre    open http://internet.tre.it/ <args>
+
+" rb shortcuts
+:command -nargs=* rb     open https://www.readbeyond.it/ <args>
+:command -nargs=* aeneas open https://www.readbeyond.it/aeneas/ <args>
+:command -nargs=* mene   open https://www.readbeyond.it/menestrello/ <args>
+:command -nargs=* mins   open https://www.readbeyond.it/minstrel/ <args>
+:command -nargs=* ss     open https://www.readbeyond.it/shortstories/ <args>
+:command -nargs=* rbgit  open https://github.com/readbeyond/ <args>
+:command -nargs=* aweb   open https://aeneasweb.org/ <args>
+:command -nargs=* agg    open https://groups.google.com/d/forum/aeneas-forced-alignment <args>
+
+" localhost development
+:command -nargs=* rout   open http://192.168.1.1 <args>
+:command -nargs=* lh     open http://localhost <args>
+:command -nargs=* lh4    open http://localhost:4000 <args>
+:command -nargs=* lh5    open http://localhost:5000 <args>
+:command -nargs=* lh6    open http://localhost:6000 <args>
+:command -nargs=* lh7    open http://localhost:7000 <args>
+:command -nargs=* lh8    open http://localhost:8000 <args>
+
+" used by grip to preview .md files for GitHub
+:command -nargs=* grip   open http://localhost:6419 <args>
+
+" tab navigation like Vim
+:command -nargs=* ne     tabnext <args>
+:command -nargs=* prev   tabprevious <args>
+
+" disable CTRL+Q to quit
+:map <C-q> <Nop>
+
+" show the link destination in the content area
+:set ssli=3
+
+" ALPE DISABLED
+" Readability: " {{{
+" Readability :: Add-ons for Firefox
+" https://addons.mozilla.org/ja/firefox/addon/readability/
+ 
+" read immediately
+nnoremap <Leader>r :<C-u>js rdb.firefox.overlay.read_now()<CR>
+" read later
+" nnoremap <Leader>rl :<C-u>js rdb.firefox.overlay.read_later()<CR>
+" send to kindle
+" nnoremap <Leader>rk :<C-u>js rdb.firefox.overlay.send_to_kindle()<CR>
+" }}}
+
+" ALPE DISABLED
+" CSS on/off (toggle): css: " {{{
+" nnoremap ! :<C-u>set invum<CR>
+" }}}
+
+" ALPE DISABLED
+" F3 to toggle the statusline
+" map <silent> <F3> :js statusline.toggle('toggle')<CR>
+
+" F2 to toggle the navbar
+map <silent> <F2> :js toggle_navbar()<CR>
+:js << EOF
+function toggle_navbar() {
+    var nb = document.getElementById('nav-bar');
+    if (!nb)
+        return;
+    nb.style.visibility = (nb.style.visibility == '') ? 'collapse' : '';
+    nb.style.overflow = (nb.style.height == '') ? '' : 'hidden';
+}
+toggle_navbar();
+EOF
