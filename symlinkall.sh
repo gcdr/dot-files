@@ -1,5 +1,6 @@
 #!/bin/bash
 
+CURR=`pwd`
 DEST="$HOME"
 #DEST="/tmp/target"
 
@@ -16,5 +17,6 @@ do
     B="$D.$DATETIME.backup"
     mv "$D" "$B"
   fi
-  cp "$F" "$D"
+  #cp "$F" "$D"
+  ln -s "$CURR/$F" "$D"
 done

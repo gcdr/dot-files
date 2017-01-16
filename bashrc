@@ -160,16 +160,17 @@ export PATH
 ##############################################################################
 
 # Oracle Java
-export JAVA_HOME="/usr/lib64/jvm/jdk1.8.0_45"
+#export JAVA_HOME="/usr/lib64/jvm/jdk1.8.0_45"
+export JAVA_HOME="/usr/lib/jvm/oracle-java8-jdk-amd64"
 
 # Node.js / NVM
-#export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"
 
 # loads nvm
-#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # activate nvm bash completion
-# [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
 
 
