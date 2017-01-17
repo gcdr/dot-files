@@ -36,6 +36,12 @@ My configuration files for Linux applications
     so it should be relatively safe to run.
 
 
+## Additional Settings For HiDPI Screens
+
+* Iceweasel (Firefox): open ``about:config`` and set ``layout.css.devPixelsPerPx`` to (say) ``1.2``
+* Icedove (Thunderbird): automatically scaled by ``.Xresources.hidpi``
+
+
 ## License
 
 **dot-files** is released under the MIT License.
