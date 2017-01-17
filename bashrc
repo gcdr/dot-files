@@ -148,6 +148,9 @@ PATH=$PATH:$HOME/.aeneas
 #PATH=$PATH:$HOME/android-sdks/platform-tools
 #PATH=$PATH:$HOME/android-sdks/tools
 
+# Rust
+PATH=$PATH:$HOME/.cargo/bin
+
 # actually export PATH
 export PATH
 

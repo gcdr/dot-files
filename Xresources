@@ -1,3 +1,11 @@
+Xft.dpi: 120
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
 xterm*font: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
 xterm*font1: -*-*-*-*-*-*-2-*-*-*-*-*-*-*
 xterm*font2: -misc-fixed-*-r-normal-*-8-*-*-*-*-*-iso8859-*
