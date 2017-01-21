@@ -1,8 +1,2 @@
-pcm.!default {
-        type hw
-        card 0
-}
-ctl.!default {
-        type hw
-        card 0
-}
+defaults.pcm.card 0
+defaults.ctl.card 0
