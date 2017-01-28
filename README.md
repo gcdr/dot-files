@@ -2,7 +2,7 @@
 
 My configuration files for Linux applications
 
-* Date: 2017-01-22
+* Date: 2017-01-28
 * Developer: [Alberto Pettarin](http://www.albertopettarin.it/)
 * License: the MIT License (MIT)
 * Contact: [click here](http://www.albertopettarin.it/contact.html)
