@@ -107,11 +107,18 @@ alias ll='ls -l'
 alias lla='ls -la'
 alias llh='ls -lh'
 alias lll='ls -lh'
-alias feh='feh -F'
+lswc() {
+    ls $1 | wc -l
+}
 
 # general utilities
-alias zpep8='pep8 --ignore=E501'
 alias :q='exit'
+alias mvp='mpv'
+alias mmpv='mpv --mute'
+alias mpvm='mpv --mute'
+alias mpvnodisplay='mpv --no-audio-display'
+alias feh='feh -F'
+alias zpep8='pep8 --ignore=E501'
 alias xclip='xclip -selection c'
 
 # download from youtube

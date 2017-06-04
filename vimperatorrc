@@ -11,6 +11,7 @@
 :command -nargs=* twit   open https://twitter.com/acutebit <args>
 :command -nargs=* git    open https://github.com/pettarin/ <args>
 :command -nargs=* tre    open http://internet.tre.it/ <args>
+:command -nargs=* hn     open https://news.ycombinator.com/ <args>
 
 " rb shortcuts
 :command -nargs=* rb     open https://www.readbeyond.it/ <args>
