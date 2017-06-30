@@ -111,6 +111,10 @@ lswc() {
     ls $1 | wc -l
 }
 
+# bad habits from Windows
+alias dir='ls'
+alias cls='clear'
+
 # general utilities
 alias :q='exit'
 alias mvp='mpv'

@@ -3,7 +3,10 @@
 :command -nargs=* maps   open maps.google.com <args>
 :command -nargs=* enwiki open https://en.wikipedia.org/wiki/<args>
 :command -nargs=* itwiki open https://it.wikipedia.org/wiki/<args>
-:command -nargs=* meteo  open http://www.arpa.veneto.it/previsioni/it/html/index.php <args>
+:command -nargs=* meteo  open https://www.ilmeteo.it/meteo/Torino/previsioni-orarie <args>
+:command -nargs=* arpap  open http://www.arpa.piemonte.gov.it/rischinaturali/rischi/pericoli-meteo/precipitazioni/pioggia.html <args>
+:command -nargs=* arpav  open http://www.arpa.veneto.it/previsioni/it/html/index.php <args>
+:command -nargs=* osmer  open http://www.osmer.fvg.it/home.php <args>
 
 " personal shortcuts
 :command -nargs=* home   open http://www.albertopettarin.it/ <args>
